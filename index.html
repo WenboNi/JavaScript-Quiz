@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>JavaScript Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="start-container">
+    <h1>JavaScript Pop-Quiz</h1>
+    <p>Click Start Quiz to Test Your JavaScript Knowledge!</p>
+    <button id="start-button" onclick="startQuiz()">Start Quiz</button>
+  </div>
+  
+  <a href="highscore.html">
+    <h3>View HighScores</h3>
+  </a>
+
+  <div class="quiz-container hide">
+    <div class="question-container">
+      <p id="question"></p>
+      <div id="choices-container"></div>
+      <p id="answer-status"></p>
+    </div>
+    <div class="timer-container">
+      <p>Time Remaining: <span id="time-remaining"></span> seconds</p>
+    </div>
+  </div>
+
+  <div class="game-over-container hide">
+    <h2>Quiz Complete!</h2>
+    <p>Your final score is <span id="final-score"></span>.</p>
+    <form id="initials-form">
+      <label for="initials">Enter your initials:</label>
+      <input type="text" id="initials" name="initials" required maxlength="3">
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
